@@ -1,184 +1,242 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "UTF-8" />
-        <title>
-          Run Buddy 
-        </title>
-        <link rel="stylesheet" href= "./assets/css/style.css" />
-    </head>
+<html lang="en">
 
-    <body>
-        <!-- Navigation of Divisions -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Run Buddy
+    </title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-        <header>
-            <h1>
-                <a href = "/">
-                  RUN BUDDY 🏃 
-                </a>
-            </h1>
-            <nav> <!--Navigation Smenatic Element-->
-              <ul> <!--Unordered list element-->
-                <li> <!--List element child of <ul> -->
-                  <a href="#what-we-do">  
-                    <!--Anchor element-->
-                    What We Do
-                  </a>
-                </li>
-                <li>
-                  <a href="#what-you-do">
-                    What You Do
-                  </a>
-                </li>
-                <li>
-                  <a href="#your-trainers"> 
-                    Your Trainers
-                  </a>
-                </li>
-                <li>
-                  <a href="#reach-out">
-                    Reach Out
-                  </a>
-                </li>
-              </ul>
-            </nav>
-        </header>
+  <body>
+    <!-- Navigation of Divisions -->
 
-        <!-- HERO / JUMBOTRON-->
-        <section class="hero">
-          <div class="hero-form"> 
+    <header>
+      <h1>
+        <a href="/">
+          RUN BUDDY 🏃
+        </a>
+      </h1>
+      <nav>
+        <!--Navigation Smenatic Element-->
+        <ul>
+          <!--Unordered list element-->
+          <li>
+            <!--List element child of <ul> -->
+            <a href="#what-we-do">
+              <!--Anchor element-->
+              What We Do
+            </a>
+          </li>
+          <li>
+            <a href="#what-you-do">
+              What You Do
+            </a>
+          </li>
+          <li>
+            <a href="#your-trainers">
+              Your Trainers
+            </a>
+          </li>
+          <li>
+            <a href="#reach-out">
+              Reach Out
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO / JUMBOTRON-->
+    <section class="hero">
+      <div class="hero-form">
+        <h3>
+          Get Started Today
+        </h3>
+        <p>
+          Fill out this form and one of our trainers will schedule a consult
+        </p>
+        <!--Create Form Element-->
+        <form>
+          <!--Name Field-->
+          <label for="name">
+            Enter full name:
+          </label>
+          <input class="form-input" type="text" placeholder="Your Name" name="name" id="name" />
+          <!--Email Field-->
+          <label for="email">
+            Enter email:
+          </label>
+          <input class="form-input" type="email" placeholder="johndoe@mail.com" name="email" id="email" />
+          <!--Phone Number Field-->
+          <label for="phone_number">
+            Enter Phone Number
+          </label>
+          <input class="form-input" type="tel" placeholder="800-123-4567" name="phone_number" id="phone_number" />
+          <p>
+            Have you worked out with a trainer before?
+            <input type="radio" name="trainer_confirm" id="trainer_yes" />
+            <label for="trainer_yes">
+              Yes
+            </label>
+            <input type="radio" name="trainer_confirm" id="trainer_no" />
+            <label for="trainer_no">
+              No
+            </label>
+          </p>
+          <p>
+            <label for="checkbox">
+              I acknowledge that I am at least 18 years of age
+            </label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+          </p>
+          <!--<input type="button" value="Submit" name="submit" id="submit" />-->
+          <button id="button" type="submit">
+            Get Running!
+          </button>
+        </form>
+
+      </div>
+    </section>
+    <section>
+      <!-- "What we do Section"-->
+      <section id="what-we-do" class="text-center">
+        <h2 class="section-title primary-border">
+          What We Do
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, nam dolores perspiciatis assumenda voluptate
+          nesciunt eius necessitatibus porro quo et enim accusamus repellendus hic ab officiis qui labore! Quas, fugit!
+        </p>
+      </section>
+
+      <!-- What you do Section-->
+      <section id="what-you-do" class="text-center">
+        <h2 class="section-title secondary-border">
+          What You Do
+        </h2>
+
+        <div>
+          <img src="./assets/images/step-1.svg" alt="" />
+          <h3>
+            Step 1: <span>Fill out the Form Above.</span>
+          </h3>
+          <p>
+            You're already here, so why not?
+          </p>
+        </div>
+
+        <div>
+          <img src="./assets/images/step-2.svg" alt="" />
+          <h3>
+            Step 2: <span>Consult With One Of Our Trainers.</span>
+          </h3>
+          <p>
+            Are you her to build muscle, lose weight, or just feel good?
+          </p>
+        </div>
+
+        <div>
+          <img src="./assets/images/step-3.svg" alt="" />
+          <h3>
+            Step 3: <span>Get Running.</span>
+          </h3>
+          <p>
+            Hit the gorund running (literally) once your trainer lays out the plan.
+          </p>
+        </div>
+
+        <div>
+          <img src="./assets/images/step-4.svg" alt="" />
+          <h3>
+            Step 4: <span>See Results.</span>
+          </h3>
+          <p>
+            Bi-weekly checkins with your trainer will keep you focused.
+          </p>
+        </div>
+
+      </section>
+
+      <!-- Meet the trainer Section-->
+      <section id="your-trainers" class="text-center">
+        <h2 class="section-title primary-border">
+          Meet The Trainers
+        </h2>
+
+        <article class="trainer">
+          <img src="assets/images/trainer-1.jpg" alt="Arron Stephens" />
+          <div class="trainer-bio text-left">
             <h3>
-              Get Started Today
+              Aaron Stephens
             </h3>
+            <h4>
+              Speed / Strength
+            </h4>
             <p>
-              Fill out this form and one of our trainers will schedule a consult
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nobis dicta expedita debitis
+              perspiciatis asperiores quae ab amet, optio in velit tempora rerum distinctio, molestiae sed quis nemo vitae
+              est.
             </p>
-            <!--Create Form Element-->
-            <form>
-              <!--Name Field-->
-              <label  for="name">
-                Enter full name:
-              </label>
-              <input class="form-input" type="text" placeholder="Your Name" name="name" id="name" />
-              <!--Email Field-->
-              <label for="email">
-                Enter email:
-              </label>
-              <input class="form-input" type="email" placeholder="johndoe@mail.com" name="email" id="email" />
-              <!--Phone Number Field-->
-              <label for="phone_number">
-                Enter Phone Number
-              </label>
-              <input class="form-input" type="tel" placeholder="800-123-4567"
-              name="phone_number" id="phone_number" />
-              <p>
-                Have you worked out with a trainer before?
-                <input type="radio" name="trainer_confirm" id="trainer_yes" />
-                <label for="trainer_yes"> 
-                  Yes
-                </label>
-                <input type="radio" name="trainer_confirm" id="trainer_no" />
-                <label for="trainer_no">
-                  No
-                </label>
-              </p>
-              <p>
-                <label for="checkbox">
-                  I acknowledge that I am at least 18 years of age
-                </label>
-                <input type="checkbox" name="checkbox" id="checkbox">
-              </p>
-              <!--<input type="button" value="Submit" name="submit" id="submit" />-->
-              <button id="button" type="submit">
-                Get Running!
-              </button>
-            </form>
-            
           </div>
-        </section>
-        
-        <!-- "What we do Section"-->
-        <section id="what-we-do" >
-            <h2 class="section-title primary-border">
-                What We Do
+        </article>
+
+        <article class="trainer">
+          <div class="trainer-bio text-right">
+            <h3>
+              Joanna Gill
+            </h3>
+            <h2>
+              Endurance
             </h2>
             <p>
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, nam dolores perspiciatis assumenda voluptate nesciunt eius necessitatibus porro quo et enim accusamus repellendus hic ab officiis qui labore! Quas, fugit!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quam delectus aut eaque doloremque error
+              quia laboriosam a obcaecati! Pariatur voluptates modi, cumque delectus et ex dolorum molestias rem autem.
             </p>
-        </section>
+          </div>
+          <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill" />
+        </article>
 
-        <!-- What you do Section-->
-         <section id="what-you-do" >
-            <h2 class="section-title secondary-border">
-                What You Do
-            </h2> 
+        <article class="trainer">
+          <img src="./assets/images/trainer-3.jpg" alt="Harry Smith" />
+          <div class="trainer-bio text-left">
+            <h3>
+              Harry "The Headband" Smith
+            </h3>
+            <h4>
+              Strength
+            </h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, eos commodi! Fuga, provident, fugit eum,
+              aspernatur quis sequi voluptatem nostrum hic nihil magni ipsum libero. Vitae delectus explicabo illo
+              voluptatum!
+            </p>
+          </div>
+        </article>
 
-            <div>
-              <img src="./assets/images/step-1.svg" alt="" />
-              <h3>
-                Step 1: <span>Fill out the Form Above.</span>
-              </h3>
-              <p>
-                You're already here, so why not?
-              </p>
-            </div>
+      </section>
 
-             <div>
-               <img src="./assets/images/step-2.svg" alt="" />
-              <h3>
-                Step 2: <span>Consult With One Of Our Trainers.</span>
-              </h3>
-              <p>
-                Are you her to build muscle, lose weight, or just feel good?
-              </p>
-             </div>
+      <!--Reach Out Section-->
+      <section id="reach-out" class="text-center">
+        <h2 class="section-title">
+          Reach Out
+        </h2>
 
-             <div>
-               <img src="./assets/images/step-3.svg" alt="" />
-               <h3>
-                 Step 3: <span>Get Running.</span>
-               </h3>
-               <p>
-                 Hit the gorund running (literally) once your trainer lays out the plan.
-               </p>
-             </div>
-
-             <div>
-               <img src="./assets/images/step-4.svg" alt=""/>
-               <h3>
-                 Step 4: <span>See Results.</span>
-               </h3>
-               <p>
-                 Bi-weekly checkins with your trainer will keep you focused.
-               </p>
-             </div>
-
-        </section> 
-
-        <!-- Meet the trainer Section--> 
-         <section id="your-trainers">
-            <h2 class="section-title">
-                Meet The Trainers
-            </h2>
-         </section> 
-        
-         <!--Reach Out Section-->
-         <section id="reach-out">
-            <h2 class="section-title">
-                Reach Out
-            </h2>
-         </section> 
-
-         <!--Footer Section-->
-         <footer>
-             <h2>
-                ❤️ Made with love by Run Buddy
-             </h2>
-             <div>
-               <a href="#"> Read Our Private Policy</a>
-               <br /> <!--Break line since a element is an inline element-->
-               &copy; 2021 Run Buddy, Inc. <!-- &copy is a copyright statement-->
-             </div>
-         </footer>
-    </body>
+      </section>
+    </section>
+    <!--Footer Section-->
+    <footer>
+      <h2>
+        ❤️ Made with love by Run Buddy
+      </h2>
+      <div>
+        <a href="#"> Read Our Private Policy</a>
+        <br />
+        <!--Break line since a element is an inline element-->
+        &copy; 2021 Run Buddy, Inc.
+        <!-- &copy is a copyright statement-->
+      </div>
+    </footer>
+  </body>
 </html>
