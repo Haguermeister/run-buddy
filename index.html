@@ -20,7 +20,8 @@
             <nav> <!--Navigation Smenatic Element-->
               <ul> <!--Unordered list element-->
                 <li> <!--List element child of <ul> -->
-                  <a href="#what-we-do"> <!--Anchor element-->
+                  <a href="#what-we-do">  
+                    <!--Anchor element-->
                     What We Do
                   </a>
                 </li>
@@ -44,8 +45,8 @@
         </header>
 
         <!-- HERO / JUMBOTRON-->
-        <section>
-          <div>
+        <section class="hero">
+          <div class="hero-form"> 
             <h3>
               Get Started Today
             </h3>
@@ -55,20 +56,20 @@
             <!--Create Form Element-->
             <form>
               <!--Name Field-->
-              <label for="name">
+              <label  for="name">
                 Enter full name:
               </label>
-              <input type="text" placeholder="Your Name" name="name" id="name" />
+              <input class="form-input" type="text" placeholder="Your Name" name="name" id="name" />
               <!--Email Field-->
               <label for="email">
                 Enter email:
               </label>
-              <input type="email" placeholder="johndoe@mail.com" name="email" id="email" />
+              <input class="form-input" type="email" placeholder="johndoe@mail.com" name="email" id="email" />
               <!--Phone Number Field-->
               <label for="phone_number">
                 Enter Phone Number
               </label>
-              <input type="tel" placeholder="800-123-4567"
+              <input class="form-input" type="tel" placeholder="800-123-4567"
               name="phone_number" id="phone_number" />
               <p>
                 Have you worked out with a trainer before?
@@ -88,7 +89,7 @@
                 <input type="checkbox" name="checkbox" id="checkbox">
               </p>
               <!--<input type="button" value="Submit" name="submit" id="submit" />-->
-              <button type="submit">
+              <button id="button" type="submit">
                 Get Running!
               </button>
             </form>
@@ -97,28 +98,72 @@
         </section>
         
         <!-- "What we do Section"-->
-        <section>
+        <section id="what-we-do" class="intro">
             <h2>
                 What We Do
             </h2>
+            <p>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, nam dolores perspiciatis assumenda voluptate nesciunt eius necessitatibus porro quo et enim accusamus repellendus hic ab officiis qui labore! Quas, fugit!
+            </p>
         </section>
 
         <!-- What you do Section-->
-         <section>
+         <section id="what-you-do">
             <h2>
                 What You Do
             </h2> 
+
+            <div>
+              <img src="./assets/images/step-1.svg" alt="" />
+              <h3>
+                Step 1:Fill out the Form Above.
+              </h3>
+              <p>
+                You're already here, so why not?
+              </p>
+            </div>
+
+             <div>
+               <img src="./assets/images/step-2.svg" alt="" />
+              <h3>
+                Step 2: Consult With One Of Our Trainers.
+              </h3>
+              <p>
+                Are you her to build muscle, lose weight, or just feel good?
+              </p>
+             </div>
+
+             <div>
+               <img src="./assets/images/step-3.svg" alt="" />
+               <h3>
+                 Step 3: Get Running.
+               </h3>
+               <p>
+                 Hit the gorund running (literally) once your trainer lays out the plan.
+               </p>
+             </div>
+
+             <div>
+               <img src="./assets/images/step-4.svg" alt=""/>
+               <h3>
+                 Step 4: See Results.
+               </h3>
+               <p>
+                 Bi-weekly checkins with your trainer will keep you focused.
+               </p>
+             </div>
+
         </section> 
 
         <!-- Meet the trainer Section--> 
-         <section>
+         <section id="your-trainers">
             <h2>
                 Meet The Trainers
             </h2>
          </section> 
         
          <!--Reach Out Section-->
-         <section>
+         <section id="reach-out">
             <h2>
                 Reach Out
             </h2>
@@ -131,8 +176,8 @@
              </h2>
              <div>
                <a href="#"> Read Our Private Policy</a>
-               <br />
-               &copy; 2021 Run Buddy, Inc.
+               <br /> <!--Break line since a element is an inline element-->
+               &copy; 2021 Run Buddy, Inc. <!-- &copy is a copyright statement-->
              </div>
          </footer>
     </body>
