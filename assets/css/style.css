@@ -66,6 +66,9 @@ section {
     background-position: center;
     position: relative;
  }
+ .build h2{
+     color: #fce138;
+ }
  .hero-form {
      color: #024e76;
      background-color: #fce138;
